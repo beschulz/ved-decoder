@@ -1,0 +1,26 @@
+package ved;
+
+message Ved
+{
+	/*
+	enum Type
+	{
+		WEB   = 22;
+		IMAGE = 429;
+		VIDEO = 311;
+		AD    = 1617; // an ad blended into the search results
+	};*/
+
+	optional uint64 index_boost        = 1; // i
+	optional uint64 type               = 2; // t
+	optional uint64 sub_link_position  = 5; // (zero based)
+	optional uint64 result_position    = 6; // r (zero based)
+	optional uint64 start              = 7; // s (zero based)
+
+	/* apparently unused
+	optional uint64 v3  = 3;
+	optional uint64 v4  = 4;
+	optional uint64 v8  = 8;
+	optional uint64 v9  = 9;
+	optional uint64 v10 = 10; */
+}
