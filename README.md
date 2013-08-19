@@ -5,7 +5,7 @@ A decoder for the ved parameter of referrer URIs from google written in python
 
 To find out, what the purpose of this repository is, please read [Google Referrer Query Strings Debunked](http://gqs-decoder.blogspot.com/2013/08/google-referrer-query-strings-debunked-part-1.html).
 
-You can also try out a [web version](gqs-decoder.appspot.com) of this decoder.
+You can also try out a [web version](//gqs-decoder.appspot.com) of this decoder.
 
 Pull requests welcome!
 
