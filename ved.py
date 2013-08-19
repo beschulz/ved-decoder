@@ -10,9 +10,16 @@ from proto.ved_pb2 import Ved
 '''
 LINK_TYPES = {
 	22   : 'web',
+	245  : 'image thumbnail'
 	429  : 'image',
 	311  : 'video',
-	1617 : 'advertisement'
+	312  : 'video thumbnail',
+	341  : 'related search'
+	1617 : 'advertisement',
+	2459 : 'knowledge sidebar link'
+	3836 : 'knowledge sidebar image',
+	3838 : 'knowledge sidebar image small',
+	3849 : 'knowledge sidebar "more images"'
 }
 
 def try_decode(s):
