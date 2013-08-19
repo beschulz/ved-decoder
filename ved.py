@@ -1,5 +1,10 @@
 #!/usr/bin/python
 
+# ugly path patching
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(__file__, '..', 'lib')))
+
 import base64
 from proto.ved_pb2 import Ved
 
@@ -10,13 +15,13 @@ from proto.ved_pb2 import Ved
 '''
 LINK_TYPES = {
 	22   : 'web',
-	245  : 'image thumbnail'
+	245  : 'image thumbnail',
 	429  : 'image',
 	311  : 'video',
 	312  : 'video thumbnail',
-	341  : 'related search'
+	341  : 'related search',
 	1617 : 'advertisement',
-	2459 : 'knowledge sidebar link'
+	2459 : 'knowledge sidebar link',
 	3836 : 'knowledge sidebar image',
 	3838 : 'knowledge sidebar image small',
 	3849 : 'knowledge sidebar "more images"'
